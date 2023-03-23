@@ -1,12 +1,6 @@
-import Post
 import tkinter as tk
 from functions import login, create_new_account, forgot_password
-
-root = tk.Tk()
-root.wm_geometry("400x700+1000+200")
-root.title("Rizzbook")
-
-
+from main import root
 
 welcome_page = tk.Frame(root)
 welcome_page.grid(row=0, column=0, sticky="news")
@@ -23,4 +17,3 @@ login_forgot_password = tk.Button(welcome_page, text="Forgot Password", command=
 login_forgot_password.pack()
 login_create_account = tk.Button(welcome_page, text="Create new account", command=create_new_account)
 login_create_account.pack()
-root.mainloop()
